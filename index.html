@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/9d0fb474ff.js" crossorigin="anonymous"></script>
+    <title>Document</title>
+
+</head>
+
+<body>
+    <section class="banner" id="sec">
+        <header class = "header">
+            <a href="#" class="logo">lOgO</a>
+            <div id="toggle" onclick="toggle()"></div>
+        </header>
+        <div class="content">
+            <h2>Hola Mundo!, Yo soy Joseph Zamora</h2>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Delectus odit atque facilis ipsam? Non possimus
+                adipisci deleniti delectus error provident, aspernatur fugit quam quis ipsam, modi commodi ducimus
+                distinctio eligendi.</p>
+            <p>
+                Ut congue convallis massa eget rhoncus. Vivamus interdum semper lacus, at viverra ante porttitor in. 
+                Nullam mattis egestas justo, tempus efficitur massa luctus a. Praesent mollis vehicula vehicula. 
+                Aliquam in justo faucibus, efficitur neque nec, convallis tortor. Sed dapibus turpis ac massa commodo egestas.</p>
+            <p>
+                Praesent id eros urna. Praesent sed auctor dolor. Morbi condimentum euismod augue nec varius. 
+                Nunc blandit tincidunt congue. Sed ac metus fermentum nisi lacinia sodales. Nullam porta tristique justo et laoreet. 
+                Vestibulum pulvinar, purus a finibus commodo, quam lectus imperdiet arcu, vel sollicitudin augue ligula quis lorem.</p>
+            <p>
+                Nunc vehicula lectus nec quam interdum, vitae mattis sapien iaculis. Duis et dui sed lorem hendrerit sollicitudin.
+                Duis cursus imperdiet mauris in tincidunt. Etiam porta fermentum dignissim. Integer venenatis cursus neque eget vulputate. 
+                Vestibulum at molestie risus, non cursus lacus. Maecenas vulputate felis risus, vel placerat justo vehicula sit amet. 
+            <p>
+                Ut tincidunt semper lacus, sed aliquet nisl ornare quis. Proin hendrerit quam eget tellus tincidunt blandit. 
+                Mauris mollis diam vitae lobortis consectetur. Sed eu iaculis dui, at varius metus. Maecenas semper tortor eget diam rhoncus, non rutrum justo cursus. 
+            </p>
+            <a class= "boton" href="#">Conóceme..</a>
+        </div>
+        <ul class="redes">
+            <li><a href="#"><img src="content/images/facebook.png" alt="icono red social"></a></li>
+            <li><a href="#"><img src="content/images/twitter.png" alt="icono red social"></a></li>
+            <li><a href="#"><img src="content/images/linkedin.png" alt="icono red social"></a></li>
+        </ul>
+
+    </section>
+    <nav id="navigation">
+        <ul>
+            <li><a href="#">Inicio</a></li>
+            <li><a href="#">Acerca de mí</a></li>
+            <li><a href="#">Servicios</a></li>
+            <li><a href="#">Portafolio</a></li>
+            <li><a href="#">Contacto</a></li>
+        </ul>
+    </nav>
+
+    <footer>
+        <h1>Aquí pie de página</h1>
+        <h4>Sobre nosotros</h4>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. 
+            Provident, earum accusamus itaque quod non expedita dolorum asperiores omnis minus 
+            possimus reiciendis eos aperiam dicta ab a veritatis. Dolor, modi adipisci.</p>  
+        
+        <i class="fa fa-arrow-up flecha" onclick = "Arriba()" caria-hidden="true"></i>
+    </footer>
+
+<script type="text/javascript">
+    function toggle(){
+        var seccion = document.getElementById("sec")
+        var nav = document.getElementById("navigation")
+        seccion.classList.toggle('active')
+        nav.classList.toggle('active')
+    }
+    function Arriba(){
+        window.scrollTo(0, 0);
+        
+    }
+</script>
+
+</body>
+
+</html>
